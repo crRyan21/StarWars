@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+
+    <link rel="stylesheet" href="assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <span id="titulo-header">Star Wars</span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#item1">Episódio IV <span>Uma nova esperança</span></a>
+                </li>
+                <li>
+                    <a href="#item2">Episódio V <span>O Império Contra-Ataca</span></a>
+                </li>
+                <li>
+                    <a href="#item3">Episódio III <span>A Vingança dos Sith</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="imagem-topo"></div>
+
+    <main>
+        <div id="sabre">
+            <div onclick="enableAutoplay()">Maratona Star Wars <i class="fas fa-play"></i></div>
+            <span onclick="disableAutoplay()">|||| <i class="fas fa-pause"></i>||||</span>
+        </div>
+        <h2>Site criado por um fã da ordem Jedi</h2>
+
+        <section id="item1">
+            <div class="container">
+                <img src="images/image1-blog.jpg" class="img-responsive border-bottom-img">
+                <h3>EPISÓDIO IV: UMA NOVA ESPERANÇA</h2>
+
+                    <p>Em Guerra nas Estrelas, o jovem Luke Skywalker (Mark Hamill) sonha ir para a Academia como seus amigos, mas se vê envolvido em uma guerra intergalática quando seu tio compra dois robôs e com eles encontra uma mensagem da princesa Leia Organa (Carrie Fisher) para o Jedi Obi-Wan Kenobi (Alec Guinness) sobre os planos da construção da Estrela da Morte, uma gigantesca estação espacial com capacidade para destruir um planeta. Luke então se junta aos cavaleiros Jedi e a Han Solo (Harrison Ford), um mercenário, para tentar destruir esta terrível ameaça ao lado dos membros da resistência.</p>
+            </div>
+        </section>
+
+        <section id="item2">
+            <div class="container">
+                <div class="imagem-lado">
+                    <div>
+                        <h3>Episódio V: O Império Contra-Ataca</h2>
+                            <p>As forças imperais comandadas por Darth Vader (David Prowse/James Earl Jones) lançam um ataque contra os membros da resistência, que são obrigados a fugir. Enquanto isso, Luke Skywalker (Mark Hamill) tenta encontrar o Mestre Yoda, que poderá ensiná-lo a dominar a "Força" e torná-lo um cavaleiro Jedi. No entanto, Darth Vader planeja levá-lo para o Lado Negro da "Força".</p>
+                    </div>
+                    <div>
+                        <img src="images/image2-blog.jpg" class="img-responsive border-bottom-img">
+                    </div>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2Xmja9Ih99w"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="item3">
+            <div class="container">
+                <div class="imagem-lado">
+                    <div>
+                        <img src="images/image3-blog.png" class="img-responsive">
+                    </div>
+                    <div>
+                        <h3>Episódio III: A Vingança dos Sith</h2>
+                            <p>Em Star Wars: Episódio 3 - A Vingança dos Sith, as Guerras Clônicas estão em pleno andamento e as diferenças entre o Conselho Jedi e o Chanceler Palpatine (Ian McDiarmid) aumentam cada vez mais. Anakin Skywalker (Hayden Christensen) mantém um elo de lealdade com Palpatine, ao mesmo tempo em que luta para que seu casamento com Padmé Amidala (Natalie Portman) não seja afetado por esta situação. Seduzido por promessas de poder, Anakin se aproxima cada vez mais de Darth Sidious (Ian McDiarmid) até se tornar o temível Darth Vader. Juntos eles tramam um plano para aniquilar de uma vez por todas com os cavaleiros jedi.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por RyanStudio</p>
+        <ul>
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-instagram-square"></i></li>
+            <li><i class="fab fa-pinterest-square"></i></li>
+        </ul>
+    </footer>
+    <video id="myVideo" width="0" height="0" controls>
+        <source src="./assets/Star Wars The Imperial March Darth Vaders Theme.mp3">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <script>
+        var vid = document.getElementById("myVideo");
+        function enableAutoplay() {
+            vid.autoplay = true;
+            vid.load();
+        }
+        function disableAutoplay() {
+            vid.autoplay = false;
+            vid.load();
+        }
+    </script>
+
+</body>
+
+</html>
